@@ -30,8 +30,7 @@ RUN \
     cd ~; \
     apt install -y \
         libgmp3-dev \
-        libmpc-dev \
-        sagemath; \
+        libmpc-dev; \
     git clone https://github.com/Ganapati/RsaCtfTool.git; \
     pip3 install -r "requirements.txt"; \
     ########################################################
