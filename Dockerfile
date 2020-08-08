@@ -28,11 +28,11 @@ RUN \
     # RSA CTF Tool (https://github.com/Ganapati/RsaCtfTool)
     #
     ########################################################
-    cd ~; \
+    cd ~/RsaCtfTool; \
     apt install -y \
         libgmp3-dev \
         libmpc-dev; \
-    git clone https://github.com/Ganapati/RsaCtfTool.git; \
+    git clone https://github.com/Ganapati/RsaCtfTool.git .; \
     pip3 install -r "requirements.txt"; \
     ########################################################
     #
