@@ -28,6 +28,7 @@ RUN \
     # RSA CTF Tool (https://github.com/Ganapati/RsaCtfTool)
     #
     ########################################################
+    mkdir ~/RsaCtfTool; \
     cd ~/RsaCtfTool; \
     apt install -y \
         libgmp3-dev \
