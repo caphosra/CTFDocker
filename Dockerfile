@@ -49,3 +49,5 @@ RUN \
     apt remove -y --purge \
         git; \
     apt clean;
+
+ENV PATH="/root/RsaCtfTool:${PATH}"
