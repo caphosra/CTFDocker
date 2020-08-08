@@ -14,6 +14,7 @@ RUN \
         git \
         python3 \
         python3-pip \
+        vim \
         wget; \
     pip3 install -U pip; \
     ########################################################

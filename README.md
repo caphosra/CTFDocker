@@ -20,6 +20,7 @@ Sorted in alphabetical order.
 - python3
 - radare2 ([GitHub](https://github.com/radareorg/radare2))
 - RSA CTF Tool ([GitHub](https://github.com/Ganapati/RsaCtfTool))
+- vim
 - wget
 
 Note that `RsaCtfTool.py` is located in `~/RsaCtfTool/`.  
