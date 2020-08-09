@@ -4,7 +4,7 @@ This is a docker image for Capture The Flag and many useful and famous tools are
 
 Just run the following command to get it started!
 ```bash
-docker run --rm -it capra314cabra/ctf
+docker run --rm -it capra314cabra/ctf:latest
 ```
 
 ## Base image
@@ -29,6 +29,16 @@ I think you find it out even if I didn't tell that since you must be a CTF playe
 I'd like to add more but you know, it's a kind of trade off.  
 The more installed, the heavier it gets.  
 (It doesn't mean that you cannot make any PRs. On the contrary, I always welcome your PRs!)
+
+## Optional
+
+You can use an image which is already installed sagemath,
+which is required to use all the features of RsaCtfTool, by typing following commands.  
+Note that it takes up much space.
+
+```
+docker run --rm -it capra314cabra/ctf:sagemath
+```
 
 ## Why docker
 
