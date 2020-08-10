@@ -1,5 +1,8 @@
 FROM ubuntu:18.04
 
+ENV DEBIAN_FRONTEND noninteractive
+ENV PATH="/root/RsaCtfTool:${PATH}"
+
 RUN \
     ########################################################
     #
@@ -56,5 +59,3 @@ RUN \
     apt remove -y --purge \
         git; \
     apt clean;
-
-ENV PATH="/root/RsaCtfTool:${PATH}"

@@ -1,5 +1,8 @@
 # CTF tools on Docker
 
+[![Deploy image](https://github.com/capra314cabra/CTFDocker/workflows/Deploy%20image/badge.svg?branch=master)](https://github.com/capra314cabra/CTFDocker)
+[![Docker Image Size](https://img.shields.io/docker/image-size/capra314cabra/ctf/latest)](https://hub.docker.com/r/capra314cabra/ctf)
+
 This is a docker image for Capture The Flag and many useful and famous tools are on this image.  
 
 Just run the following command to get it started!
@@ -35,6 +38,9 @@ The more installed, the heavier it gets.
 You can use an image which is already installed sagemath,
 which is required to use all the features of RsaCtfTool, by typing following commands.  
 Note that it takes up much space.
+
+[![Deploy image with sage](https://github.com/capra314cabra/CTFDocker/workflows/Deploy%20image%20with%20sage/badge.svg)](https://github.com/capra314cabra/CTFDocker)
+[![Docker Image Size](https://img.shields.io/docker/image-size/capra314cabra/ctf/sagemath)](https://hub.docker.com/r/capra314cabra/ctf)
 
 ```
 docker run --rm -it capra314cabra/ctf:sagemath
