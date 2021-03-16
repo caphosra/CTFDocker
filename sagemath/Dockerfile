@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV PATH="/root/RsaCtfTool:${PATH}"
@@ -22,10 +22,11 @@ RUN \
     pip3 install -U pip; \
     ########################################################
     #
-    # sagemath
+    # radare2 (https://github.com/radareorg/radare2)
     #
     ########################################################
-    apt install -y sagemath; \
+    apt install -y \
+        radare2; \
     ########################################################
     #
     # pwntools (https://github.com/Gallopsled/pwntools)
@@ -44,13 +45,13 @@ RUN \
         libmpc-dev; \
     git clone https://github.com/Ganapati/RsaCtfTool.git .; \
     pip3 install -r "requirements.txt"; \
+    rm -rf ./.git/* ./.github/* ./examples/*; \
     ########################################################
     #
-    # radare2 (https://github.com/radareorg/radare2)
+    # sagemath
     #
     ########################################################
-    apt install -y \
-        radare2; \
+    apt install -y sagemath; \
     ########################################################
     #
     # Clean waste
@@ -58,4 +59,5 @@ RUN \
     ########################################################
     apt remove -y --purge \
         git; \
-    apt clean;
+    apt clean; \
+    rm -rf /var/lib/apt/lists/*;

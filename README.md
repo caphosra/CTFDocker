@@ -12,19 +12,22 @@ docker run --rm -it capra314cabra/ctf:latest
 
 ## Base image
 
-Ubuntu 18.04 (LTS)
+Ubuntu 20.04 (LTS)
 
 ## Installed tools
 
 Sorted in alphabetical order.
 
-- build-essential
-- pwntools ([GitHub](https://github.com/Gallopsled/pwntools))
-- python3
-- radare2 ([GitHub](https://github.com/radareorg/radare2))
-- RSA CTF Tool ([GitHub](https://github.com/Ganapati/RsaCtfTool))
-- vim
-- wget
+|Tools|Versions|Descriptions|Links|latest|sagemath|
+|:---|:---:|:---|:---|:---:|:---:|
+|build-essential|12.8|Standard tools available on ubuntu.|[Ubuntu package](https://packages.ubuntu.com/focal/build-essential)|:heavy_check_mark:|:heavy_check_mark:|
+|pwntools|4.3.1|A CTF framework and exploit development library.|[GitHub](https://github.com/Gallopsled/pwntools)|:heavy_check_mark:|:heavy_check_mark:|
+|python|3.8.2|Interpreter for python.|[Homepage](https://www.python.org/)|:heavy_check_mark:|:heavy_check_mark:|
+|radare2|2.3.0|A portable reverse engineering framework.|[GitHub](https://github.com/radareorg/radare2)|:heavy_check_mark:|:heavy_check_mark:|
+|RsaCtfTool||A RSA multi attacks tool.|[GitHub](https://github.com/Ganapati/RsaCtfTool)|:heavy_check_mark:|:heavy_check_mark:|
+|sagemath|9.0|An open source mathematical software.|[Homepage](https://www.sagemath.org/)||:heavy_check_mark:|
+|vim|8.1.2269|A CUI code editor.|[Homepage](https://www.vim.org/)|:heavy_check_mark:|:heavy_check_mark:|
+|wget|1.20.3|A tool that retrieves files from the web.|[Homepage](https://www.gnu.org/software/wget/)|:heavy_check_mark:|:heavy_check_mark:|
 
 Note that `RsaCtfTool.py` is located in `~/RsaCtfTool/`.  
 I think you find it out even if I didn't tell that since you must be a CTF player :P
