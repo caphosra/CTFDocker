@@ -44,6 +44,7 @@ RUN \
         libgmp3-dev \
         libmpc-dev; \
     git clone https://github.com/Ganapati/RsaCtfTool.git .; \
+    git checkout 08e53aa9e1de8e1cb17f160bf60e7bab8d507fe5; \
     pip3 install -r "requirements.txt"; \
     rm -rf ./.git/* ./.github/* ./examples/*; \
     ########################################################
